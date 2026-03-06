@@ -1,0 +1,41 @@
+name: cell_type_pas_atlas
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core Python & Jupyter
+  - python>=3.12
+  - jupyter
+  - ipykernel
+  - ipython
+  - pip
+
+  # Data Science & Stats
+  - pandas
+  - numpy
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - umap-learn
+
+  # Plotting
+  - matplotlib
+  - seaborn
+  - pyqt  # Required for matplotlib.rcParams['backend'] = "Qt5Agg"
+  - adjusttext
+
+  # Bioinformatics
+  - htseq
+  - biopython
+
+  # Utilities
+  - python-dotenv
+  - ruamel.yaml
+  - conda-forge::nbstripout
+  - conda-forge::black
+
+# Pip-specific installs
+  - pip:
+      - "black[jupyter]"
+      - "huggingface_hub[hf_xet]"

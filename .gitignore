@@ -1,0 +1,48 @@
+# ========================
+# 1. Private Configuration
+# ========================
+
+# Ignore ALL .env files anywhere in the project
+*.env
+
+# EXCEPT for the safe template (force Git to track this one)
+!*.template.env
+
+# ========================
+# 2. Snakemake Hidden Files
+# ========================
+# Snakemake's internal tracking directory (can get massive)
+.snakemake/
+# Standard workflow output directories (keeps data off GitHub)
+results/
+logs/
+data/
+
+# ========================
+# 3. Python & Jupyter Junk
+# ========================
+# Jupyter autosaves
+.ipynb_checkpoints/
+# Python compiled bytecode
+__pycache__/
+*.py[cod]
+
+
+# ========================
+# 4. Hugging Face Uploading script with FILLED IN token
+# ========================
+
+upload_to_hf.with_token.py
+
+# ========================
+# 4. OS / System Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# # 5. Tool Caches & Hidden Dirs
+# # ========================
+WF/.java/
+WF/.cache/
+
