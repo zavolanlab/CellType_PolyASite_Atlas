@@ -21,7 +21,7 @@ We've used [IGV genome browser](https://igv.org/) to visualize .bam file with al
 
 **GAPDH gene**
 <img width="2209" height="734" alt="image" src="https://github.com/user-attachments/assets/98dd884a-43f9-44e5-b6f8-99a601405635" />
-
+Alignments were grouped by cell barcode tag (CB) and colored by UMI tag (UB).
 
 **Zoom-in into the PolyA site:**
 <img width="2223" height="750" alt="image" src="https://github.com/user-attachments/assets/d1c85674-449b-41cd-b17c-50e192f09645" />
